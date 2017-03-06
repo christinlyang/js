@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+
+      <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+  <style>
+        ul{
+            position: fixed;;
+            margin :0;
+            height:70px;
+			width:100%;
+			bottom:50px;
+            padding-left:0px;
+        }
+        li{
+            list-style: none;
+            float:left;
+            width:50px;
+            height: 60px;
+			margin-left: 30px;
+            margin-right: 30px; 
+			
+        }
+        a{
+            width:50px;
+            height: 60px;
+            display: block;
+            background: url(images/social_media.png) no-repeat;
+            background-position: center;
+			margin:auto;
+            
+        }
+    </style>
+</head>
+
+<body>
+  <div class="container">
+<div id='sidebar-tab'>
+  <div id='tab'>
+    
+    <div id='sidebar-main'>
+      <div class='widget1' id='tab1'>
+        <div style="width:200px;height:400px;">
+		1
+		</div>
+      </div>
+      <div class='widget1' id='tab2'>
+        <div style="width:200px;height:400px;">
+		2
+		</div>
+      </div>
+      <div class='widget1' id='tab3'>
+        <div style="width:200px;height:400px;">
+		3
+		</div>
+      </div>
+	  <div class='widget1' id='tab4'>
+        <div style="width:200px;height:400px;">
+		4
+		</div>
+      </div>
+	  <!-- <div class='widget1' id='tab5'>
+        <div style="width:200px;height:400px;">
+		5
+		</div>
+      </div>
+	  <div class='widget1' id='tab6'>
+        <div style="width:200px;height:400px;">
+		6
+		</div> -->
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <footer>
+    <div class='tab-widget-menu clear' style="height:70px;">
+	
+	    <ul id='select-tab' style="text-align:center;">
+         <li class='tab1'><a href="#tab1"></a><p>qq</p></li>
+         <li class='tab2'><a href="#tab2"></a><p>qq</p></li>
+         <li class='tab3'><a href="#tab3"></a><p>qq</p></li>
+         <li class='tab4'><a href="#tab4"></a><p>qq</p></li>
+        <!--  <li class='tab5'><a href="#tab5"></a><p>qq</p></li>
+         <li class='tab6'><a href="#tab6"></a><p>qq</p></li> -->
+        </ul>
+	</div>
+
+    
+  </footer>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+	
+	<script>
+    $(function() {
+        var index;
+        var icorW;
+        $("ul>li").each(function(index) {
+            index = $(this).index();//获取对象的索引值
+            icorW = $(this).width()+3;//获取对象宽度
+            var _this = $(this);
+            $(_this).children().attr("style","background-position:"+(8-(index *icorW))+"px 0px");//先众神归位
+            
+            $(_this).hover(function () {
+                $(_this).children().attr("style","background-position:"+(8-(index *icorW))+"px 105%");
+
+                $("span").html(index);//测试索引数值
+
+            },function(){
+                $(_this).children().attr("style","background-position:"+(8-(index *icorW))+"px -2px");
+            })
+            
+        })
+    
+    })
+    </script>
+
+</body>
+</html>

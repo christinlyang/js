@@ -1,0 +1,87 @@
+/* Variables */
+/* Mixins */
+/* Common */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #2C3E50;
+  background-color: white;
+}
+
+/* App */
+.header {
+  padding: 30px 50px;
+  background-color: #f2f2f2;
+}
+.header h1 {
+  font-size: 30px;
+}
+
+.tabContainer {
+  padding: 0 50px;
+  background-color: #f2f2f2;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.tabContainer .tabs {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.tabContainer .tabs .tab {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #698bac;
+}
+.tabContainer .tabs .tab .icon,
+.tabContainer .tabs .tab .text {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.tabContainer .tabs .tab .icon {
+  font-size: 30px;
+}
+.tabContainer .tabs .tab .text {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.tabContainer .tabs .tab.active {
+  color: #673AB7;
+  font-weight: 300;
+}
+.tabContainer .tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background: #673AB7;
+}
+
+.sectionsContainer {
+  padding: 30px 50px 0;
+}
+.sectionsContainer .sections .section {
+  display: none;
+}
+.sectionsContainer .sections .section p {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+.sectionsContainer .sections .section.active {
+  display: block;
+}
+
+@media screen and (max-width: 960px) {
+  .tabContainer .tabs .tab .text {
+    display: none;
+  }
+}

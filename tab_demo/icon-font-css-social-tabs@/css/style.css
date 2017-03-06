@@ -1,0 +1,96 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+body {
+  margin: 5em;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.social-icons {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100px;
+}
+
+.social-icons.left {
+  padding: 0 50px;
+}
+.tab {
+  margin-bottom: 5px;
+  padding: 6px;
+  background: hsla(0, 0%, 0%, .2);
+  border-radius: 25px 0 0 25px;
+}
+
+.circle {
+  padding: 10px 10px;
+  width: 20px;
+  font-size: 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.fa-facebook {
+  color: hsl(221, 44%, 41%);
+}
+
+.fa-facebook:hover {
+  background-color: hsl(221, 44%, 41%);
+}
+
+.fa-twitter {
+  color: hsl(195, 100%, 60%);
+}
+
+.fa-twitter:hover {
+  background-color: hsl(195, 100%, 60%);
+}
+
+.fa-google-plus {
+  color: hsl(7, 71%, 55%);
+}
+
+.fa-google-plus:hover {
+  background-color: hsl(7, 71%, 55%);
+}
+
+.fa-linkedin {
+  color: hsl(199, 85%, 36%);
+}
+
+.fa-linkedin:hover {
+  background-color: hsl(199, 85%, 36%);
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-google-plus:hover, .fa-linkedin:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.screen-reader {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+.vertical { 
+  width: 300px;
+  
+}
+
+.vertical .tab {
+  float: left;
+  border-radius: 0 0 25px 25px;
+  margin-right: 5px;
+  padding-top: 50px;
+}
+
+
+

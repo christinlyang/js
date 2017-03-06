@@ -1,0 +1,139 @@
+@import "compass/css3";
+
+@import 'susy';
+@import 'compass/utilities/general/clearfix';
+
+// colors
+$paper: #FFFFFF;
+$p1:    #81E8E6;
+$p2:    #87F2D2;
+$p3:    #85DBA9;
+$p4:    #7FE38B;
+$p5:    #95E881;
+$s1:    #EB6966;
+$s2:    #F56AA3;
+$s3:    #DE6BD3;
+$s4:    #D66AF5;
+$s5:    #A966EB;
+$k:     #1B1F2B;
+
+// various
+$default-transition-duration: 0.2s;
+$default-transition-function: ease-in-out;
+
+// Grid
+$line: 24px;
+$susy: (
+  columns: 12,
+  gutters: 1,
+  gutter-position: inside,
+);
+.col-1     { @include span(1 of 12); }
+.col-2     { @include span(2 of 12); }
+.col-3     { @include span(3 of 12); }
+.col-4     { @include span(4 of 12); }
+.col-5     { @include span(5 of 12); }
+.col-6     { @include span(6 of 12); }
+.col-7     { @include span(7 of 12); }
+.col-8     { @include span(8 of 12); }
+.col-9     { @include span(9 of 12); }
+.col-10    { @include span(10 of 12); }
+.col-11    { @include span(11 of 12); }
+.col-12    { @include span(12 of 12); }
+.row {
+    margin-bottom: $line;
+    @include clearfix;
+}
+.container {
+    @include container;
+    width: 600px;
+    margin: 0 auto;
+}
+
+// Typography
+body {
+    font-family: 'proxima-nova', sans-serif;
+}
+p  { line-height: $line; }
+h1 { font-size: 72px; }
+h2 { font-size: 48px; }
+h3 { font-size: 36px; }
+h4 { font-size: 24px; }
+h5 { font-size: 18px; }
+h6 { font-size: 14px; }
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1em;
+    font-weight: 700;
+}
+ul {
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+li { line-height: $line; }
+
+// Icons
+.s {
+    font-size: 20px;
+    line-height: $line;
+}
+
+// Helpers
+.align-left     { text-align: left; }
+.align-right    { text-align: right; }
+.align-center   { text-align: center; }
+.pull-right     { float: right; }
+.pull-left      { float: left; }
+.remove-top     { margin-top: 0; }
+.remove-bottom  { margin-bottom: 0; }
+
+// Base Colors
+body {
+    color: $k;
+    background: $paper;
+    border-color: $k;
+}
+.dark {
+    background: lighten($k, 10);
+    color: darken($paper, 10);
+    border-color: darken($paper, 10);
+}
+
+// Layout
+nav {
+    @include box-sizing(border-box);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 2em;
+    text-align: center;
+    line-height: $line*3;
+    font-weight: 400;
+    font-size: 14px;
+    .title {
+        padding: 0 1.5em;
+        float: left;
+    }
+    .name {
+        position: absolute;
+        width: 200px;
+        left: 0; right: 0;
+        margin: 0 auto;
+    }
+    #light-switch {
+        cursor: pointer;
+        @include user-select(none);
+        float: left;
+        line-height: $line*3;
+    }
+    .specimen {
+        padding: 0 1.5em;
+        float: right;
+    }
+}
+section { padding: $line*2 0; }
+.space-block {
+    width: 100%;
+    height: 72px;
+    border: 1px solid;
+    margin-bottom: $line;
+}

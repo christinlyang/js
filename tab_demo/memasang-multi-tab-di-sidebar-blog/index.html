@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+<div id='sidebar-tab'>
+  <div id='tab'>
+    
+    <div id='sidebar-main'>
+      <div class='widget1' id='tab1'>
+        <div style="width:200px;height:400px;">
+		1
+		</div>
+      </div>
+      <div class='widget1' id='tab2'>
+        <div style="width:200px;height:400px;">
+		2
+		</div>
+      </div>
+      <div class='widget1' id='tab3'>
+        <div style="width:200px;height:400px;">
+		3
+		</div>
+      </div>
+	  <div class='widget1' id='tab4'>
+        <div style="width:200px;height:400px;">
+		4
+		</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <footer>
+    <div class='tab-widget-menu clear'>
+      <ul id='select-tab'>
+        <li class='tab1'>
+		
+		 <a  off='images/01_03.png' on='images/01_03_1.png' href="#tab1"><img  id="index1" src="images/01_03.png" />                  
+                    <p>1</p>
+                  </a>
+		</li>
+        <li class='tab2'><!-- a href='#tab2'><span class="bar-img"><img src="images/01_06.png"/>_01
+					        <p>2</p>
+					    </span></a> -->
+					 <a  off='images/01_06.png' on='images/01_06_01.png' href="#tab2"><img  id="index1" src="images/01_06.png"  />                  
+                    <p>2</p>
+                  </a>
+					</li>
+        <li class='tab3'><a  off='images/01_07.png' on='images/01_07_01.png' href="#tab3"><img  id="index1" src="images/01_07.png"  />                  
+                    <p>3</p>
+                  </a></li>
+		<li class='tab4'><a  off='images/01_09.png' on='images/01_09_01.png' href="#tab4"><img  id="index1" src="images/01_09.png"  />                  
+                    <p>4</p>
+                  </a></li>
+																											
+      </ul>
+    </div>
+  </footer>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+	
+	
+<!-- <script>
+$(function() {
+  $("#select-tab li:first").addClass("selected");
+//$(this).animate({"background-positionY":-13},1)
+  $("#sidebar-main > div").hide();
+  $("#sidebar-main > div:first").show();
+  $("#select-tab a").click(function() {
+    $("#select-tab li").removeClass("selected");
+    $(this).parent().addClass("selected");
+	  //$(this).animate({"background-positionY":-13},1)
+	
+	
+	  var $changeImg=$("#select-tab");
+         $("#select-tab li").each(function(){  
+              var abc=$(this).attr("id");  
+              switch (abc) {
+                                case 'tab1':
+								    $(".tab1 li").siblings(".selected").find('img').attr("src","images/01_03_1.png");
+                                   									
+                                    break;
+                                case 'tab2':
+                                    
+									 $(".tab2 li").siblings(".selected").find('img').attr("src","images/01_06_01.png");
+                                    break;
+                                case 'tab3':
+                                   
+									$(".tab3 li").siblings(".selected").find('img').attr("src","images/01_07_01.png");
+                                    break;
+								case 'tab4':
+                                   
+									$(".tab4 li").siblings(".selected").find('img').attr("src","images/01_09_01.png");
+                                    break;
+                                default:
+								    $(".tab4 li").siblings(".selected").find('img').attr("src","images/01_09_01.png");
+                                     
+                                    break;
+                            }
+
+    });  
+    var a = $(this).attr("href");
+    $("#sidebar-main > div:visible").hide();
+    $(a).show();
+    return false
+  })
+});
+
+
+
+
+
+</script> -->
+</body>
+</html>

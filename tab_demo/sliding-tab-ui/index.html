@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sliding Tab UI</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style> .cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+* {
+box-sizing:border-box;
+}
+</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="box">
+		<nav class="tabset--nav">
+			<div class="nav--item -is--active" data-tab-target="tab-1">
+				Onesies
+			</div>
+			
+			<div class="nav--item" data-tab-target="tab-2">
+				Twosies
+			</div>
+			
+			<div class="nav--item" data-tab-target="tab-3">
+				Threesies
+			</div>
+			
+			<div class="active--tab__marker"></div>
+		</nav>
+	
+		<section class="tabset--content" data-active-tab="tab-1">
+			<div class="tabset--section">
+				TABSET ONE
+			</div>
+			<div class="tabset--section">
+				TABSET TWO
+			</div>
+			<div class="tabset--section">
+				TABSET THREE
+			</div>
+		</section>
+
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>

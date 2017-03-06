@@ -1,0 +1,103 @@
+@import "compass/css3";
+
+$icon-tab-size: 70px;
+.icon-tab {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    .s {
+        position: relative;
+        z-index: 1;
+        @include transition;
+        font-size: 30px;
+        line-height: $icon-tab-size;
+        margin: 0 auto;
+        color: lighten($k, 50);
+    }
+    &:before {
+        position: absolute;
+        @include transition;
+        content: '';
+        display: block;
+        width: 0; height: 0;
+        margin: 0 auto;
+        top: $icon-tab-size/2;
+        left: 0; right: 0;
+        background: darken($paper, 5);
+        @include box-sizing(border-box);
+        @include border-radius(100%);
+    }
+    .label {
+        @include transition;
+        color: darken($paper, 30);
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0 0 1em;
+    }
+    &:hover {
+        &:before {
+            top: $icon-tab-size * 0.1;
+            width: $icon-tab-size * 0.8;
+            height: $icon-tab-size * 0.8;
+            line-height: $icon-tab-size * 0.8;
+        }
+        .label {
+            color: $k;
+            margin: 0.5em 0;
+        }
+    }
+    &.active {
+        .s { color: white; }
+        &:before {
+            top: 0;
+            width: $icon-tab-size;
+            height: $icon-tab-size;
+            line-height: $icon-tab-size;
+            background: darken($p3, 12);
+        }
+        .label {
+            color: $k;
+            margin: 0.75em 0;
+        }
+    }
+}
+// dark styles
+.dark {
+    .icon-tab {
+        .s { color: lighten($k, 65); }
+        &:before { background: lighten($k, 15); }
+        .label { color: lighten($k, 30); }
+        
+        &:hover {
+             .label { color: $paper; }
+        }
+        
+        &.active {
+            .s { color: white; }
+            &:before { background: darken($p3, 12); }
+            .label { color: $paper; }
+        }
+    }
+}
+
+// different colors for funs
+.col-3:nth-child(1) {
+    .icon-tab.active:before {
+        background: darken($p1, 12);
+    }
+}
+.col-3:nth-child(2) {
+    .icon-tab.active:before {
+        background: darken($p2, 12);
+    }
+}
+.col-3:nth-child(3) {
+    .icon-tab.active:before {
+        background: darken($p3, 12);
+    }
+}
+.col-3:nth-child(4) {
+    .icon-tab.active:before {
+        background: darken($p4, 12);
+    }
+}
