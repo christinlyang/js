@@ -1,0 +1,229 @@
+﻿/* 通用 */
+
+*{margin:0px;}
+    
+body{  
+        background:url(images/image_01.jpg);
+        background-repeat:no-repeat;
+        background-size:cover; 
+        margin:0px;
+        padding:0px;
+        position:relative;
+        max-height:100%;
+        font-size:12px;
+        font-family:"微软雅黑";
+        overflow-x:hidden;
+        overflow-y:hidden;
+        
+
+        
+}
+li{list-style-type:none;}
+ul{
+    margin-top: 0;
+    padding-left: 0;
+}
+
+    
+    .head{
+        padding-top:1%;
+        height:5%;
+        width: 100%;
+    }
+    .icon{
+       display: inline-block;
+        vertical-align: top;
+        margin-left: 2%;
+        width: 40%;
+    }
+    .icon img{vertical-align:middle; margin-bottom:3%;max-width:10%;}
+    
+.listbanner img{
+     
+     padding-right: 1px;
+   
+}
+    
+    .time_pic  img {max-width:36%;}
+    .mncs_pic img{max-width:20%; }
+    .wifi_pic img{max-width:32%;}
+    .settings_pic img{max-width:23%;}
+    .home_pic img{max-width:30%;
+                  padding-right:1%;
+    }
+   #txt {
+       font-size:13px;
+       font-family: "微软雅黑";
+}
+    
+    
+.icon span{margin-left:1%;color:#FFF;font-size:20px; font-family:"微软雅黑";}
+    
+    
+    .listbanner{
+        display: inline-block;
+        vertical-align: top;
+        
+        font-family: "微软雅黑";
+        height: 5%;
+        color: white;
+        text-align: right;
+    padding-right:1%;
+    }
+   
+    .listbanner ul{
+       
+        margin-top: 0;
+        margin-bottom: 0;
+        float: right;
+        width:100%;
+    }
+.listbanner ul li{
+    float: left;
+    margin-right: -17px;
+}
+.listbanner ul li:last-child{
+   margin-right:0;
+}
+.listbanner ul li span{
+    float: left;
+    margin-top: 11px;
+    margin-right: -1px;
+    margin-left: 20%;
+}
+
+/* sence.css */
+
+.div_02{
+        /*width: 100%;*/
+        clear: both;
+        width: 60%!important;
+        margin: auto;
+        text-align: center;
+        font-size:30px;
+        
+        margin-top: 6%;
+    }
+#products{
+  width: 80%;
+  
+   margin: auto;
+position: relative;
+text-align: center;}
+#products li { 
+        float:left; 
+        margin:3px;
+} 
+    
+.boxpic{
+    width: 28%;
+   display: inline-block;
+   vertical-align: top;
+   margin-right: 2%;
+   margin-top:1%;
+   position: relative;
+}
+/* .boxpic:nth-child(3n){   margin-right:0;}*/
+.boxpic .img{
+   width: auto;
+   max-width: 100%;
+    display:block;
+    text-align: center;
+}
+.boxpic p{
+     margin: 0;
+   position: absolute;
+   text-align: center;
+   bottom: 1%;
+   font-size: 15px;
+   color: #ffffff;
+   width: 100%;
+   line-height: 50px;
+   
+}
+#change{
+     /*height:120px;*/
+     /*width:300px;*/
+     /*position:relative;*/
+    clear: both;
+    margin-left:auto; margin-right:auto;
+    padding-top: 30px;
+    max-width: 40%!important;
+}
+#change li{float:left;}
+.change_01{
+    text-align: right;
+    vertical-align: middle;
+    position: relative;
+    display:inline-block;
+    width: 40%;
+}
+.change_02{
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    display:inline-block;
+    width: 40%;
+}
+/* type.css */
+.listbanner img{
+    width:2.5em;
+    border:0px;
+    padding:0px;
+    vertical-align: middle;
+    margin-right:20px;
+    margin-left:4px;
+    }
+    .listbanner ul{
+    margin-bottom:3em;
+    }
+    a:link{
+text-decoration:none;
+}
+    
+    .listbanner a{
+    
+    color:white;
+    }
+    
+    .time_pic{
+    width:10%;
+    }
+    .listbanner a{
+    vertical-align:middle;
+    }
+  .listbanner {
+    /* margin-right: -16%; */
+    margin-top: 0;
+    margin-bottom: 0;
+    float: right;
+     }
+.listbanner ul {
+   
+    margin-top: 0;
+    margin-bottom: 0;
+    float: right;
+    
+}
+.abc img{
+  margin: 0px;
+  padding: 0px;
+}
+.abc{
+  margin:0px 20px;
+}
+.head{
+padding-bottom:2em;
+}
+.listbanner{
+
+}
+.alt a{
+color:white;
+}
+/* aspvideo.css */
+
+.title{
+word-wrap:break-word;
+word-break:break-all;
+}

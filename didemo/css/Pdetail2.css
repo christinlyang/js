@@ -1,0 +1,368 @@
+﻿.hidden {
+         display: none;
+      }
+        .div_productDetail{
+        clear: both;
+        width: 100%!important;
+        margin: auto;
+        text-align: center;
+        font-size:12px;
+        
+        margin-top: 6%;
+    }
+    .btn{margin-top:-7.5%;}
+    .btn span{color:#FFF;font-size:25px; font-family:"微软雅黑";}
+    .btn a{
+        text-decoration:none;
+        width:100%;
+        height:100%;
+        display:block;
+}
+    .btn ul {
+        width: 70%;
+        height: 55px;
+        margin: 85px auto 0;
+    }
+    .btn ul li{
+        float: left;
+        width: 25%;
+        height: 100%;
+        line-height: 60px;
+        
+        font-size:26px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .btn ul li.active {
+        background-color: #565667;
+    }
+        .nav {
+            background-color: #1f2032;
+            margin-top: -15px;
+            padding-top: 15px;
+        }
+        .parameter{
+          width: 85%;
+         text-align: center;
+         position: relative;
+         margin: auto;
+         margin-top: 0.5%;
+        overflow-y:scroll;
+         height:350px;
+        }
+        .parameter ul {
+            margin: 2% 9%;
+        }
+        .parameter ul li {
+            float: left;
+            width: 25%;
+            color: #FFFFFF;
+            text-align:center;
+        }
+            .detail_category{
+    width: 100%;
+    height:300px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 0.5%;
+    /*overflow:hidden;*/
+}
+
+        /* .parameter ul li .detail_block {
+            border: 1px solid #1f2032;
+             margin: 5px 5px;
+        } */
+      /*   .parameter li .category {
+            width: 100%;
+             color: white;
+            background-color: #2b4568;
+            font-size: 16px;
+            text-align: center;
+            line-height: 40px;
+             text-decoration:none;
+        } */
+    /*     .parameter li:nth-last-of-type(odd) .category {
+            background-color: #382b77;
+color: white;
+            text-decoration:none;
+        } */
+        .parameter .title {
+            
+            background-color: #2e2d46;
+            font-size: 16px;
+            color: white;
+            line-height: 40px;
+            width:50px;
+        }
+     
+        .product_content{
+        margin: auto;
+        width: 80%;
+        color: #ffffff;
+        font-size: 16px;
+        text-align: left;
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+            .wrap ul {
+                overflow-y:hidden;
+                position: absolute;
+                left:0;
+            }
+            .wrap li {
+                float:left;
+                display: inline;
+                position: relative;
+                width:10.82%;
+            }
+            .wrap li .img{
+                display:block;
+                margin:0 auto;
+                width:100%;
+                
+            }
+.wrap ul li {
+   margin-right:2px;
+}
+            
+            .left.left-dis,.right.right-dis{
+                cursor:default;
+            }
+    .product_main{
+        display: inline-block;
+        vertical-align: top;
+        width: 90%;
+        margin-right: 1%;
+    }
+.product_main img{
+    width: 100%;
+    max-width: 444px;
+}
+  /* asd */  .product_picshow{
+    width: 725px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 3.5%;
+    overflow-y:hidden;
+}
+ /* asd  */   .product_picshow .list li{
+     width:190px; 
+     margin:0 9px; 
+}
+/*  asd  */  #list {
+                width:624px;
+                height:108px;
+                overflow-y:hidden;
+                margin:0 auto;
+                position:relative;
+                margin-left:45px;
+               
+            }
+            
+ .wrap {
+                position: absolute;
+               width:100%;
+               
+            }
+            
+.product_picshow .left{
+    float:left;
+    cursor:pointer;
+    overflow:hidden;
+    margin-top:3%;
+}
+.product_picshow .right{
+    float:right;
+    cursor:pointer;
+    overflow:hidden;
+    margin-top:3%;
+}
+    
+ 
+ #pic_01{
+  width: 100%;
+  position:absolute;
+  
+   margin: auto;
+top:0px;
+text-align: center;}
+.pic_01 ul li{float:left;}
+.pic_01 ul li a img{
+  display:block;
+}
+#pic_01 li { 
+        float:left; 
+       
+} 
+.boxpic{
+   width: 28%;
+   display: inline-block;
+   vertical-align: top;
+   position: relative;
+}
+ .boxpic:nth-child(3n){   margin-right:0;}
+.boxpic img{
+   width: auto;
+   max-width: 100%;
+}
+.boxpic li {float:left;}
+.boxpic p{
+   margin: 6px;
+   position: absolute;
+   text-align: center;
+   bottom: 0%;
+   font-size: 12px;
+   color: #ffffff;
+   width: 90%;
+   line-height: 20px;
+   background-color: #000000;
+   opacity: 0.7;
+}
+ .pic_01{
+  width: 80%;
+   margin: auto;
+   position: relative;
+   text-align: center;
+}
+.pic_02{
+   width: 28%;
+   display: inline-block;
+   vertical-align: top;
+   margin-right: 3%;
+   margin-top:3%;
+   position: relative;
+}
+.pic_02 img{
+    width: auto;
+    max-width: 100%;
+    display:block;
+    text-align: center;
+}
+.pic_02 p{
+   margin: 0;
+   position: absolute;
+   text-align: center;
+   bottom: 1%;
+   font-size: 16px;
+   color: #ffffff;
+   width: 100%;
+   line-height: 40px;
+   
+}
+    
+.div_aspvideo{
+        
+        clear: both;
+        width: 80%!important;
+        margin: auto;
+        text-align: center;
+        font-size:30px;
+        
+        margin-top: 1%;
+    }
+.aspvideowrap{
+            width:100%;
+        }
+.aspvideocontent{
+  width: 80%;
+   margin: auto;
+   position: relative;
+   text-align: center;
+}
+     
+.contentmain{
+   width: 28%;
+   display: inline-block;
+   vertical-align: top;
+   margin-right: 3%;
+   margin-top:3%;
+   position: relative;
+}
+ #bnt_asp1{
+    position:relative;
+     width:300px;
+    margin-top:5%;
+    clear: both;
+    margin:auto; 
+    margin-right: 34%;
+    max-width: 30%!important;
+}
+#bnt_asp1 img {max-width:50%;}
+#bnt_asp1 li{float:left;}
+.left_01{
+    text-align: right;
+    vertical-align: middle;
+    position: relative;
+    display:inline-block;
+    width: 40%;
+}
+.right_01{
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    display:inline-block;
+    width: 40%;
+}   
+ #bnt_asp{
+    position:relative;
+     width:300px;
+    margin-top:5%;
+    clear: both;
+    margin:auto; 
+    margin-right: 34%;
+    max-width: 30%!important;
+}
+#bnt_asp img {max-width:50%;}
+#bnt_asp li{float:left;}
+.left_02{
+    text-align: right;
+    vertical-align: middle;
+    position: relative;
+    display:inline-block;
+    width: 40%;
+}
+.right_02{
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    display:inline-block;
+    width: 40%;
+}
+
+/* asd  337-370行是新添加的class */   .parameter .content {
+              height:100px;
+            overflow: hidden;
+            word-wrap: break-word;
+            /* padding: 5px 15px 25px; */
+            /*line-height: 20px;*/
+            color: white;
+            text-decoration:none; 
+            /* float: left; */      }
+.aa{margin-top:3px;}
+.table_1{
+    margin:auto;
+    border: 1px solid white;      
+    width: 85%;
+    border-collapse:collapse;
+    margin-bottom:16px;
+    
+}
+/*  .detail_block {
+            
+             margin: 5px 5px;
+        } */
+ .parameter table  .category{
+            
+            background-color: #2b4568; 
+            min-width: 100px;
+            line-height: 40px; 
+            font-size:16px;
+            color:white;
+        }
+        .parameter table:nth-last-of-type(odd) .category {
+            background-color: #382b77;
+              color: white;
+            text-decoration:none;
+        }

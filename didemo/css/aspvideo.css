@@ -1,0 +1,88 @@
+﻿.div_aspvideo{
+        
+        clear: both;
+        width: 80%!important;
+        margin: auto;
+        text-align: center;
+        font-size:30px;
+        
+        margin-top: 2%;
+    }
+    
+.tj_wrapper{
+    width:90%;
+    overflow-x:hidden;
+    position:relative;
+    margin:auto;
+    min-height:40%;
+    
+}
+.boxpic{
+   width: 30%;
+   height:20%
+   display:block;
+   vertical-align: top;
+   margin:5px;
+   float:left;
+   position: relative;
+   
+}
+.boxpic:nth-child(3n+1){   clear:both;}
+.boxpic .img{
+   width: auto;
+   max-width: 100%;
+   display:block;
+}
+.boxpic p{
+     margin: 0;
+   position: absolute;
+   text-align: center;
+   bottom: 1%;
+   font-size: 16px;
+   color: #ffffff;
+   width: 100%;
+   line-height: 30px;
+      
+}
+#aspvideocontent{
+     width: 100%;
+     position:absolute;
+     margin-left: 6%;
+     text-align: center;
+}
+        
+        .aspvideotitle{
+            width: 70%;
+            margin:auto;
+            text-align: center;
+            color: #ffffff;
+            
+            font-size: 30px;
+            margin-top:3%;
+        }
+ #change{
+    position:relative;
+     width:300px;
+    margin-top:5%;
+    clear: both;
+    margin:auto; 
+    margin-right: 34%;
+    max-width: 30%!important;
+}
+#change img {max-width:50%;}
+#change li{float:left;}
+.change_01{
+    text-align: right;
+    vertical-align: middle;
+    position: relative;
+    display:inline-block;
+    width: 40%;
+}
+.change_02{
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    display:inline-block;
+    width: 40%;
+}
+

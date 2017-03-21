@@ -43,9 +43,8 @@
       <ul id='select-tab'>
         <li class='tab1'>
 		
-		 <a  off='images/01_03.png' on='images/01_03_1.png' href="#tab1"><img  id="index1" src="images/01_03.png" />                  
-                    <p>1</p>
-                  </a>
+		 <a  off='images/01_03.png' on='images/01_03_1.png' href="#tab1"><img  id="index1" src="images/01_03_1.png" />               
+          </a>
 		</li>
         <li class='tab2'>
 					 <a  off='images/01_06.png' on='images/01_06_01.png' href="#tab2"><img  id="index1" src="images/01_06.png"  />                  
@@ -74,15 +73,17 @@
 	<script>
 	$(function() {
   $("#select-tab li:first").addClass("selected");
+    
   $("#sidebar-main > div").hide();
   $("#sidebar-main > div:first").show();
+
   $("#select-tab a").click(function() {
     $("#select-tab li").removeClass("selected");
     $(this).parent().addClass("selected");
     var a = $(this).attr("href");
     $("#sidebar-main > div:visible").hide();
     $(a).show();
-    return false
+    return false;
   })
 });
 	
@@ -92,14 +93,51 @@
 		var on = $(this).attr("on");
 		var off = $(this).attr("off");
 		$(this).find("img").attr("src",on);
+		if($("#select-tab li:first").removeClass("selected")){
+		   $(".tab1").find("img").attr("src","images/01_03.png");
+		//}else if( $("#select-tab li:first").addClass("selected")){
+		//$(".tab1").find("img").attr("src","images/01_03_1.png");
+		//};
+		}else{
+		return false;
+		}
 	});
 	$("#select-tab a").blur(function(){
+	    var off = $(this).attr("off");
+		var on = $(this).attr("on");		
+		$(this).find("img").attr("src",off);
+		if($("#select-tab li:first").addClass("selected")){
+		  $(".tab1").find("img").attr("src","images/01_03_1.png");
+		//}else if( $("#select-tab li:first").removeClass("selected")){
+		
+		// $(".tab1").find("img").attr("src","images/01_03.png");
+		//};
+		}else{
+		  return false;
+		}
+	});
+	
+})
+	</script>
+<!-- $(function(){
+	$("#select-tab a").focus(function(){
 		var on = $(this).attr("on");
 		var off = $(this).attr("off");
+		$(this).find("img").attr("src",on);
+	});
+	$("#select-tab a").blur(function(){
+	    var off = $(this).attr("off");
+		var on = $(this).attr("on");
+		
+		
+		if($("#select-tab li:first").removeClass("selected")){
+		   $(".tab1").find("img").attr("src","");
+		   
+		   
 		$(this).find("img").attr("src",off);
 	});
 })
-	</script>
+	 -->
 
 </body>
 </html>

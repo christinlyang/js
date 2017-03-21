@@ -1,0 +1,218 @@
+﻿/* .div_project{
+        clear: both;
+        width: 100%!important;
+        margin: auto;
+        text-align: center;
+        font-size:12px;
+        
+        margin-top: 3%;
+    } */
+#change{
+     height:120px;
+     width:300px;
+    
+     position:relative;margin-left:auto; margin-right:auto;
+}
+#change li{float:left;}
+.change_01{
+    text-align:center;
+    vertical-align:middle;
+    padding-top:50%;
+    position:relative;
+}
+
+
+
+    .projectwrap{
+        width:100%;
+    }
+    .projectitle{
+        width: 80%;
+        margin:auto;
+        text-align: center;
+        color: #ffffff;
+        
+        font-size: 30px;
+        margin-top:1%;
+    }
+    .projectcontent{
+        margin: auto;
+        width: 80%;
+        color: #ffffff;
+        font-size: 16px;
+        text-align: left;
+        margin-top: 1%;
+        margin-bottom: 2%%;
+        line-height: 1.5em;
+        text-indent: 2em;
+    }
+    .projectbanner{
+        width: 100%;
+        /*height: 180px;*/
+        background-color: #202038;
+        text-align: center;
+        margin-top:2%;
+    }
+    .bannerpic{
+        width: 6%;
+        display: inline-block;
+        /*margin-top: 26px;*/
+        position: relative;
+        margin-right: 20px;
+    }
+    
+    
+    .bannerpic    img{
+        
+        max-width: 90%;
+        
+        text-align: center;
+        vertical-align: middle;
+    }
+/* .cam_top  img {
+    width: 10%;
+        max-width: 100%;
+       display:block;
+        text-align: center;
+        max-width: 90%;
+        display: block;
+        text-align: center;
+    
+}*/
+.cam_bottom img{
+    max-width: 40%;
+} 
+/* .bannerpic p{
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    line-height: 22px;
+    margin-bottom: 10%;
+    vertical-align: middle;
+} */
+.bannerpic .increaseicon{
+    position: absolute;
+    top: 7%; 
+    right: -56%;
+}
+.bannerpic:last-child  .increaseicon{
+    display: none;
+}
+.increaseicon .img{
+    max-width:30%;
+    margin-top:20%;
+    margin-left:-20%;
+}
+.productpicshow .left {
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+margin-top: 2%;
+    
+}
+.productpicshow .right {
+    float: right;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-right:10px;
+}
+            .wrap ul {
+                overflow-y:hidden;
+                position: absolute;
+                left:0;
+            }
+            .wrap li {
+                float:left;
+                display: inline;
+                position: relative;
+                width:10.82%;
+            }
+            .wrap li .img{
+                display:block;
+                margin:0;
+                 width:100%;
+              
+               
+                
+            }
+.wrap ul li {
+   margin-right:2px;
+}
+            
+            .left.left-dis,.right.right-dis{
+                cursor:default;
+            }
+     .productmain{
+        display: inline-block;
+        vertical-align: top;
+        width: 90%;
+        
+        margin-right: 1%;
+    }
+.productmain .img{
+    width: 25%;
+    
+}
+.productpicshow{
+    /* asd width: 650px; */
+     width: 725px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 4%;
+    overflow-y:hidden;
+}
+ /* asd */    #list {
+                width:624px;
+                height:107px;
+                overflow-y:hidden;
+                margin:0 auto;
+                margin-left:45px;
+               /* margin-left:10px; */
+                position:relative;
+                
+            }
+/*  asd */   .productpicshow .list li{
+     width:190px; 
+      margin:0 9px; 
+     /* margin:0 2px;  */
+}
+     .wrap {
+                position: absolute;
+                width: 100%;
+               
+            }            
+/*  .left{
+    float:left;
+    cursor:pointer;
+    
+    overflow:hidden;
+    margin-top:-18%;
+    margin-left: 10%;
+}
+ .right{
+    float:right;    
+    cursor:pointer;
+    overflow:hidden;
+    margin-top:-18%;
+    margin-right: 10%;
+} */
+.div_project{
+        clear: both;
+        width: 100%!important;
+        margin: auto;
+        text-align: center;
+        font-size:12px;
+        
+        margin-top: 3%;
+    }
+    
+.bannerpic p{
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    line-height: 22px;
+    margin-bottom: 10%;
+    vertical-align: middle;
+}

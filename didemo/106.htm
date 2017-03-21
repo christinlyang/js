@@ -1,0 +1,425 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head><!-- PageID 106 - published by Open Text Web Solutions 10.1 - 10.1.0.470 - 34498 -->
+<title>型号选择</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<link rel="stylesheet" type="text/css" href="css/sony.css" />
+<link rel="stylesheet" type="text/css" href="css/type.css" />
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/type.js"></script>
+<script type="text/javascript">
+$(function(){
+  var length=JSON.parse(localStorage.getItem('key')).length;
+  var data=JSON.parse(localStorage.getItem('key'));
+    if(length>0){
+    for(var i=length-1;i>=length-6;i--){
+      $("#customers").append('<tr class="alt"><td><a style="font-size:22px;"  href='+data[i][1]+'>'+data[i][2]+'</a></td></tr>');
+      //$("#customers").prepend('<tr><td><a href="">A7RM2</a></td></tr>')
+    }
+  }
+  else{
+   /* for(var i=length-1;i>=0;i--){
+      $(".products").prepend('<a id="boxpic2" class="boxpic" href='+data[i][1]+'><img src='+data[i][0]+' /><div style="display:block;position:absolute;font-size: 14px;top:0px;left:0px;color:red;background: url() no-repeat;padding-right: 18px;background-position: center right;">热门机型</div><p>'+data[i][2]+'</p></a>');
+    }
+      $(".products a:eq(0)").prepend('<a id="boxpic2" class="boxpic" href='+data[i][1]+'><img src='+data[i][0]+'><p></p></a>');
+  */}
+  
+})
+</script>
+<style type="text/css">
+#customers
+{
+  margin-left:-140px;
+  position:absolute;
+  width:16%;
+  
+  color:white;  
+  border-collapse:collapse;
+}
+#customers td
+{
+  color:white;
+  font-size: 16px;
+  border:1px solid #382b77;
+  padding:10px 7px 10px 7px;
+}
+#customers th 
+{
+  font-size: 22px;
+  border: 1px solid #382b77;
+  text-align:center;
+  padding-top:2px;
+  padding-bottom:2px;
+  background-color:#382b77;
+  color:white;
+  padding: 10px 7px 10px 7px;
+}
+#customers tr.alt td 
+{
+  color:white;
+  font-size: 16px;
+  background-color:#2e2d46;
+}
+</style></head>
+<body onload="startTime()" style="background:url(images/image_01.jpg);">
+
+<div class="container" >
+    <div class="head">
+        <div class="icon"><a href="javascript:history.go(-1)"><img src="images/back.png"/></a><span>型号选择</span></div>
+        <div class="listbanner">
+         <ul><!--
+             <a id="txt" class="time_pic"><span><img src="images/data_01.png"/></span></a>
+                   <img src="images/data_01.png"/>
+             <a class="mncs_pic"><span>模拟器测试</span></a>
+                   <img src="images/data_02.png"/>
+             <a class="wifi_pic"><span>无线连接</span> </a>
+                   <img src="images/data_03.png"/>-->
+              <a  class="settings_pic">设置</a>
+              <a href="javascript:window.didemo.goSetting()" class="abc"><img href="javascript:window.didemo.goSetting()" src="images/data_04.png"/></a>
+              <a  class="home_pic">首页</a>
+              <a href="javascript:window.didemo.goHome()" class="abc"><img src="images/data_05.png"/></a></a>
+                        
+        </ul>
+        </div>
+    </div>
+    
+<div class="div_02" id="div_02">
+<table id="customers">
+<tbody>
+<tr>
+  <th>最近浏览</th>
+</tr>
+</tbody></table>
+
+   
+<div class="tj_wrapper" id="tj">
+  <div id="products" class="products">
+
+    
+
+
+
+                    <a id="boxpic1" class="boxpic"  href="125.htm"  onfocus="godF($(this))" onblur="godM($(this))">                    
+                    <img  class="img" src="images/camerabackg_01.png" />
+                    <p>微单</p>
+                    </a>
+
+      
+
+
+
+                    <a id="boxpic1" class="boxpic"  href="124.htm"  onfocus="godF($(this))" onblur="godM($(this))">                    
+                    <img  class="img" src="images/camerabackg_02.png" />
+                    <p>微单镜头</p>
+                    </a>
+
+      
+
+
+
+                    <a id="boxpic1" class="boxpic"  href="123.htm"  onfocus="godF($(this))" onblur="godM($(this))">                    
+                    <img  class="img" src="images/camerabackg_03.png" />
+                    <p>单电</p>
+                    </a>
+
+      
+
+
+
+                    <a id="boxpic1" class="boxpic"  href="122.htm"  onfocus="godF($(this))" onblur="godM($(this))">                    
+                    <img  class="img" src="images/camerabackg_04.png" />
+                    <p>黑卡</p>
+                    </a>
+
+      
+
+
+
+                    <a id="boxpic1" class="boxpic"  href="121.htm"  onfocus="godF($(this))" onblur="godM($(this))">                    
+                    <img  class="img" src="images/camerabackg_05.png" />
+                    <p>长焦数码相机</p>
+                    </a>
+
+      
+
+
+
+                    <a id="boxpic1" class="boxpic"  href="120.htm"  onfocus="godF($(this))" onblur="godM($(this))">                    
+                    <img  class="img" src="images/camerabackg_06.png" />
+                    <p>数码摄像机</p>
+                    </a>
+
+      
+
+
+
+                    <a id="boxpic1" class="boxpic"  href="119.htm"  onfocus="godF($(this))" onblur="godM($(this))">                    
+                    <img  class="img" src="images/camerabackg_07.png" />
+                    <p>运动摄像机</p>
+                    </a>
+
+      
+
+
+
+                    <a id="boxpic1" class="boxpic"  href="110.htm"  onfocus="godF($(this))" onblur="godM($(this))">                    
+                    <img  class="img" src="images/camerabackg_08.png" />
+                    <p>数码配件</p>
+                    </a>
+
+      
+
+
+
+                    <a id="boxpic1" class="boxpic"  href="109.htm"  onfocus="godF($(this))" onblur="godM($(this))">                    
+                    <img  class="img" src="images/camerabackg_09.png" />
+                    <p>软件/Apps</p>
+                    </a>
+
+      
+  </div>
+
+  </div> 
+ <div id="change" class="change">
+     <div class="change_01" id="change_01">
+      <a><img src="images/producticon05.png"/></a>
+         </div>
+            <div class="change_02" id="change_02">
+     <a><img src="images/producticon06.png"/></a>
+         </div>
+    </div>
+ </div>
+ 
+</div>
+ </body>
+<script>
+$(function(){
+   
+   var a_type=localStorage.getItem("a_type");
+    if(a_type)
+    {
+        var num = localStorage.getItem("a_type");
+        var $TheSelect=$(".products a").eq(num);
+        var TheSelect=$TheSelect[0];
+        $TheSelect.css("box-shadow","0px 0px 18px #9a91f5");
+        TheSelect.focus();
+        
+    }
+    else
+    {
+        localStorage.setItem("a_type","0");
+        var $TheFirst=$("#products a").eq(0);
+        var TheFirst=$TheFirst[0];
+        TheFirst.focus();
+    }
+    $("#products a").click(function(){
+        var index=$(this).index(); 
+        localStorage.setItem("a_type",index);
+    });
+//
+    $("#products a").focus(function(){
+    //$("#aspvideocontent").css("top",0);
+    var num = $(this).index()+1;
+    var line = Math.ceil(num/3);
+    var length =  Math.ceil($("#products a").length/3);
+    var maxTop = ($(this).height()+10)*(length-3)
+    var height = ($(this).height()+10)*(line-1);
+    var TopNum = ($("#products").position().top)*-1;
+    //$(".tj_wrapper").scrollTop(height);
+ 
+    if(line==1)
+    {
+        $(".change_02").find("img").attr("src","images/producticon06.png");
+        $(".change_01").find("img").attr("src","images/producticon05.png");
+        //alert(1);
+    }
+    else if(line==length)
+    {
+        $(".change_02").find("img").attr("src","images/producticon07.png");
+        $(".change_01").find("img").attr("src","images/producticon04.png");
+        
+            //alert("down");
+    }
+    else
+    {
+        $(".change_02").find("img").attr("src","images/producticon04.png");
+        $(".change_01").find("img").attr("src","images/producticon05.png");
+        
+        //alert("middle");
+        
+    }
+ });
+$(".products _02 a").blur(function(){
+     $(this).css("box-shadow","none");
+});
+$(".products a").focus(function(){
+     $(this).css("box-shadow","0px 0px 18px #9a91f5");
+});
+$(".tj_wrapper").scroll(function(){
+        //alert($(this).scrollTop());
+        
+        if($(this).scrollTop() == 0){
+            $("#change_02").find("img").attr("src","images/producticon06.png");
+        }
+        else if($(this).scrollTop() + parseInt($(this).css("height").replace("px","")) == document.getElementById("tj").scrollHeight){
+            $("#change_01").find("img").attr("src","images/producticon07.png");
+        }
+        else{
+            $("#change_02").find("img").attr("src","images/producticon04.png");
+            $("#change_01").find("img").attr("src","images/producticon05.png");
+        }
+    });
+    
+})
+</script>
+<script type="text/javascript">
+  $(function(){
+    $("a[name=but1]").focus();
+    $(".wrap a").each(function(a,b){
+      $(this).attr("id","pic"+a);
+      $(this).attr("name","pic"+a);
+    });
+    $(".products a").each(function(a,b){
+      var c=a*1+1;
+      $(this).attr("id","product"+c);
+      $(this).attr("name",a);
+    });
+    $(document).on('keydown', function(e) {
+            //alert(e.which);
+            switch (e.which) {
+                case 37:
+                    //keyCode left
+                    //alert(document.activeElement.id);
+                    //判断当前获取焦点的元素方法1
+                    var actId1 = document.activeElement.id;
+                    var charId=actId1.substr(0,7);
+                    var numId=actId1.substr(7,8);
+                    //alert(numId);
+                    if(actId1 == 'tab1') {
+                        $("a[name='but2']").focus();
+                    }else if(actId1=='pic0'){
+                      $("a[name='pic1']").focus();
+                    }else if(charId=='showPic'){
+                      if(numId%3==1){
+                        var indexNum=numId;
+                        var $Theafter=$(".aspvideocontent a").eq(indexNum);
+                        var Theafter=$Theafter;
+                        Theafter.focus();
+                      }
+                    }
+                    break;
+                case 38:
+                    
+                    
+                    var actId2 = document.activeElement.id;
+                    var numId=actId2.substr(7,8);
+                    //alert(numId);
+                   /* $("#aspvideocontent a").focus(function(){
+                      var num = $(this).index()+1;
+                    var line = Math.ceil(num/3);
+                    if(line==1){
+                        $(".active a").focus();
+                      }
+                    });
+                    $("#aspvideocontent2 a").focus(function(){
+                    //$("#aspvideocontent").css("top",0);
+                    var num = $(this).index()+1;
+                    var line = Math.ceil(num/3);
+                    if(line==1){
+                        $(".active a").focus();
+                      }
+                    });
+                    if(line==1){
+                        $(".active a").focus();
+                      }
+                    numId=numId*1;
+                    
+                    switch (numId){
+                      case 1:
+                          //$("a[name='abc']").unbind("focus" );
+                          $("a[name='abc']").focus();
+                          $(".active a").focus();
+                          break;
+                      case 2:
+                          $(".active a").focus();
+                          break;
+                      case 3:
+                          $(".active a").focus();
+                          break;
+                    }*/
+                    var isfocus=$("#showPic1").is(":focus");
+                    if(isfocus){
+                      var btn=$(".active a").attr("name").substr(3,4);
+                      //btn=btn*1-1;
+                      //alert(btn);
+                      //$(".active a").focus();
+                      $("#showPic1").focus();
+                      $("a[name=but"+btn+"]").focus();
+                    }
+                    // key code up
+                    break;
+                case 39:
+                    //keycode right
+                    var actId = document.activeElement.id;
+                    var aLength=$(".wrap a").length-1;
+                    var max="pic"+aLength;
+                    var little= "pic"+(aLength-1);
+                    var charId=actId.substr(0,7);
+                    var numId=actId.substr(7,8);
+                    //alert(charId);
+                    console.log("right arrow key pressed!");
+                    var ha = document.hasFocus();
+                    if(actId == 'tab4') {
+                        $("a[name='but3']").focus();
+                    }else if(actId==max){
+                      $("a[name="+little+"]").focus();
+                    }else if(charId=='product'){
+                      //alert(0);
+                      if(numId%3==0){
+                        var indexNum=numId-2;
+                        var $Thebefor=$(".products a").eq(indexNum);
+                        var Thebefor=$Thebefor;
+                        Thebefor.focus();
+                        //alert(Thebefor);
+                      }
+                    }
+                    break;
+                case 40:
+                    //keycode down
+                    break;  
+            }
+        });
+  })
+    
+  
+        //使用js监听当前的按键值方法
+        /*
+        window.onkeydown = function() {
+            alert(window.event.keyCode)
+        }*/
+    </script>
+  <script>
+    $(function(){
+     var Pcolor;
+      $("#customers a").focus(function(){
+      Pcolor=$(this).parent("td").css("background-color");
+      $(this).parent("td").css("background-color","rgb(43, 69, 104)");
+      });
+      $("#customers a").blur(function(){
+      //Pcolor=$(this).parent("td").css("background-color");
+      $(this).parent("td").css("background-color",Pcolor);
+      });
+        setTimeout(function(){
+        var netName = window.didemo.networkInfo();
+        var storeName = window.didemo.storeName();
+        $(".wifi_pic span").html(netName);
+        $(".mncs_pic span").html(storeName);
+        },700); });
+  </script>
+</html>
+ <!--images/imghover_02.jpg' on='images/indexpic_06.png' -->

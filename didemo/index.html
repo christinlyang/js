@@ -1,0 +1,112 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head><!-- PageID 1 - published by Open Text Web Solutions 10.1 - 10.1.0.470 - 34498 -->
+<title>home page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/sony.css" />
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/sony_2.js"></script>
+
+</head>
+
+<body onload="startTime()" style="background:url(images/image_01.jpg);">
+
+
+<div class="container" >
+
+    <div class="head">
+        <div class="icon" style="width:20%;"><img class="img" src="images/sony_01.png"/></div>
+        <div class="listbanner">
+         <ul>
+             <!--li class="time_pic"><span><div id="txt"></div></span><img src="images/data_01.png"/></li>
+             <li class="mncs_pic"><span>模拟器测试</span><img src="images/data_02.png"/></li>
+             <li class="wifi_pic"><span>无线连接</span><img src="images/data_03.png"/> </li>
+             
+             <li class="settings_pic"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设置</span><a href="javascript:window.didemo.goSetting()"> <img src="images/data_04.png"/></a></li>
+             <li class="home_pic"><span>&nbsp;&nbsp;首页</span><a href="javascript:window.didemo.goHome()"> <img src="images/data_051.png"/></a></li-->
+            <a id="txt" class="time_pic"><span><img src="images/data_01.png"/></span></a>
+                   <img src="images/data_01.png"/>
+             <a class="mncs_pic"><span>模拟器测试</span></a>
+                   <img src="images/data_02.png"/>
+             <a class="wifi_pic"><span>无线连接</span> </a>
+                   <img src="images/data_03.png"/>
+              <a  class="settings_pic">设置</a>
+              <a href="javascript:window.didemo.goSetting()" class="abc"><img href="javascript:window.didemo.goSetting()" src="images/data_04.png"/></a>
+              <a  class="home_pic">首页</a>
+              <a href="javascript:window.didemo.goHome()" class="abc"><img src="images/data_051.png"/></a></a>
+                        
+        </ul>
+        </div>
+</div>
+    
+    <div class="div_00">
+         
+         <div  class="modulemain module01" style="position:relative;">
+                    
+
+                   
+
+                  <a class="index1" tabindex="0" off='images/imghover_01.jpg' on='images/indexpic_03.png' href="scene.html" onfocus="godF($(this))" onblur="godM($(this))"><img  id="index1" src="images/imghover_01.jpg"  />                  
+                    <p>场景选择</p>
+                  </a>
+        </div>       
+         
+         <div  class="modulemain module01" style="position:relative;">
+                    
+
+                   
+
+                  <a class="index1" tabindex="0" off='images/imghover_02.jpg' on='images/indexpic_06.png' href="106.htm" onfocus="godF($(this))" onblur="godM($(this))"><img  id="index1" src="images/imghover_02.jpg"  />                  
+                    <p>型号选择</p>
+                  </a>
+        </div>       
+         
+        <!--div  class="modulemain module01"><a class="index1" tabindex="0" off='images/imghover_01.png' on='images/indexpic_03.png' href="scene.html"><img  id="index1" src="images/imghover_01.png"  /><p>index</p></a></div>       
+        <div  class="modulemain module01"><a class="index1" tabindex="0" off='images/imghover_01.png' on='images/indexpic_03.png' href="scene.html"><img  id="index1" src="images/imghover_01.png"  /><p>index</p></a></div-->
+        <div class="modulemain module03"><a class="index3" tabindex="0" onblur="change('index3','images/imghover_03.jpg')" onfocus="change('index3','images/indexpic_08.png')" onclick="javascript:window.didemo.goPlaySetting()" style="box-shadow: none;"><img id="index3" src="images/imghover_03.jpg"><p>播放设定</p></a></div>       
+
+     </div>
+       <div class="div_footer">
+         Powered by Sony&nbsp;(&nbsp;China&nbsp;)&nbsp;Ltd.CSMC
+       </div>
+</div>
+
+<script>
+$(function(){
+   var a_index=localStorage.getItem("a_index");
+    if(a_index)
+    {
+        var num = localStorage.getItem("a_index");
+        var $TheSelect=$(".modulemain a").eq(num);
+        var TheSelect=$TheSelect[0];
+        TheSelect.focus();
+        
+    }
+    else
+    {
+        localStorage.setItem("a_index","0");
+        var $TheFirst=$(".modulemain a").eq(0);
+        var TheFirst=$TheFirst[0];
+        TheFirst.focus();
+    }
+    $(".modulemain").click(function(){
+        var index=$(this).index();
+        //$.cookie('index', index); 
+        localStorage.setItem("a_index",index);
+    });
+})
+
+var setName=function(storeName,wifiName){
+    $(".mncs_pic span").html(storeName);
+    $(".wifi_pic span").html(wifiName);
+}
+</script>
+</body>
+</html>
